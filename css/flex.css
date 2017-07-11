@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Index */
+/*	1.	Flex Properties
+*/
+
+	.flex{
+		display: flex;
+	}
+
+	.flex-col{
+		flex-direction: column;
+	}
+
+	.flex-col-wrap{
+		flex-flow: column wrap;
+	}
+
+	.flex-row-wrap{
+		flex-flow: row wrap;
+	}
+
+	.flex-center{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.flex-just-between{
+		justify-content: space-between;
+	}
+
+	.flex-just-center{
+		justify-content: center;
+	}
+
+	.flex-wrap{
+		flex-wrap: wrap;
+	}

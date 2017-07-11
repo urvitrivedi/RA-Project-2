@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aloha Apparel</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/flex.css" rel="stylesheet" type="text/css" />
+<link href="css/font.css" rel="stylesheet" type="text/css" />
+<link href="css/theme.css" rel="stylesheet" type="text/css" />
+
+<!-- Start Google Fonts and Font Awesome -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet" />
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- End Google Fonts and Font Awesome -->
+</head>
+
+<body>
+<!-- Start Header -->
+	<header class="flex flex-just-between">
+	<!-- Start Logo -->
+		<div class="logo padding-1em"><a href=""><img src="images/aloha-logo.svg" /></a></div>
+	<!-- End Logo -->
+	
+	<!-- Start Navigation -->
+		<nav class="flex">
+			<ul class="flex flex-row-wrap">
+				<li class="flex flex-center sliding-u-l-r"><a href="#">Home</a></li>
+				<li class="flex flex-center sliding-u-l-r"><a href="#">About</a></li>
+				<li class="flex flex-center sliding-u-l-r"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	<!-- End Navigation -->
+	
+	<!-- Start Cart Icon -->
+		<div class="cart-icon flex flex-center padding-1em"><a href="#"><img src="images/cart-icon.svg" /></a></div>
+	<!-- End Cart Icon -->
+	
+	</header>
+<!-- End Header -->
+
+<!-- Start Banner Section -->
+	<section class="banner flex flex-center flex-col">
+		<div class="text-align-center">
+			<h4 class="banner-subtitle font-white uppercase padding-vertical-small">New Collection</h4>
+			<h1 class="font-white">Spring/Summer 2016</h1>
+		</div>
+	</section>
+<!-- End Banner Section -->
+
+<!-- Start Main Content -->
+	<main>
+	<!-- Start Call To Action Section -->
+		<section class="hand-crafted-styles padding-vertical-7em padding-horizontal-30em padding-horizontal-12em-tablet padding-horizontal-2em-mobile flex flex-just-between flex-col-wrap">
+			<h2 class="font-black text-align-center padding-btm"><span class="subsection-italic">Hand-Crafted </span>Styles</h2>
+			<p class="text-align-center">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+		</section>
+	<!-- End Call To Action Section -->
+	
+	<!-- Start Product Section -->
+		<section class="product padding-3em">
+			<h2 class="font-black text-align-center margin-btm padding-btm"><span class="subsection-italic">Most-Loved </span>Styles</h2>
+			<!-- Start Item 1 -->
+			<div class="individual-items flex flex-row-wrap flex-just-center">
+				<ul>
+					<li class="flex flex-col">
+						<img src="images/stretch-knit-dress.jpg" />
+						<h5 class="font-grey uppercase text-align-center">Dresses</h5>
+						<h3 class="font-pink padding-vertical-small text-align-center">Stretch Knit Dress</h3>
+						<h6 class="font-grey uppercase text-align-center">$169.00</h6>
+					</li>
+				</ul>	
+				<!-- End Item 1 -->
+		
+				<!-- Start Item 2 -->
+				<ul>
+					<li class="flex flex-col">
+						<img src="images/cotton-blue-shirt.jpg" />
+						<h5 class="font-grey uppercase text-align-center">Shirts</h5>
+						<h3 class="font-pink padding-vertical-small text-align-center">Cotton Blue Shirt</h3>
+						<h6 class="font-grey uppercase text-align-center">$89.00</h6>
+					</li>
+				</ul>	
+				<!-- End Item 2 -->
+
+				<!-- Start Item 3 -->
+				<ul>
+					<li class="flex flex-col">
+						<img src="images/checked-stretch-dress.jpg" />
+						<h5 class="font-grey uppercase text-align-center">Dresses</h5>
+						<h3 class="font-pink padding-vertical-small text-align-center">Checked Stretch Dress</h3>
+						<h6 class="font-grey uppercase text-align-center">$129.00</h6>
+					</li>
+				</ul>	
+				<!-- End Item 3 -->
+
+				<!-- Start Item 4 -->
+				<ul>
+					<li class="flex flex-col">
+						<img src="images/blue-hipster-backpack.jpg" />
+						<h5 class="font-grey uppercase text-align-center">Bags</h5>
+						<h3 class="font-pink padding-vertical-small text-align-center">Blue Hipster Backpack</h3>
+						<h6 class="font-grey uppercase text-align-center">$69.00</h6>
+					</li>
+				</ul>	
+				<!-- End Item 4 -->
+			</div>	
+		</section>
+	<!-- End Product Section -->
+	
+	<!-- Start Signup Email -->
+		<section class="signup-section flex flex-center flex-col">
+			<h2 class="font-white text-align-center padding-top padding-btm"><span class="subsection-italic font-white">Sign-up for </span>Updates</h2>
+			<p class="font-white text-align-center padding-horizontal-30em padding-horizontal-12em-tablet padding-horizontal-2em-mobile">Style updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+			<!--<div class="subscribe flex">-->
+			<form class="subscribe flex flex-just-between" action="mailto:someone@example.com" method="post">
+				<div class="subscribe-input-email flex"><input type="text" placeholder="Your Email">
+				<span class="button flex"><input type="submit" value="Subscribe"></span></div>
+			</form>
+			<!--</div>-->
+		</section>
+	<!-- End Signup Email -->
+		
+	</main>
+	<!-- End Main Content -->
+
+<!-- Start Footer -->
+<footer class="flex flex-just-between font-white flex-footer-col-ai-center padding-3em">
+	<!-- Start Contact Address --> 
+	<div class="contact">
+		<ul>
+			<li>&copy; 2016 Aloha Apparel Co.<br> Powered by HTML and CSS.</li>
+			<li>604-604-6040. <u class="font-white"> info@alohaapparel.com</u></li>
+			<li>1490 W Broadway<br>Vancouver, BC, Canada</li>
+		</ul>
+	</div>
+	<!-- End  Contact Address -->
+	
+	<!-- Start Social Media Footer Icons -->
+	<div class="social-media flex">
+	<ul>
+		<a href="#">
+			<li class="flex">
+				<div class="social-media-icons">
+					<i class="fa fa-facebook font-white" aria-hidden="true"></i>
+				</div>
+				<div class="font-white social-media-text">Facebook</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="flex">
+				<div class="social-media-icons">
+					<i class="fa fa-twitter font-white" aria-hidden="true"></i>
+				</div>
+				<div class="font-white social-media-text">Twitter</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="flex">
+				<div class="social-media-icons">
+					<i class="fa fa-instagram font-white" aria-hidden="true"></i>
+				</div>
+				<div class="font-white social-media-text">Instagram</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="flex">
+				<div class="social-media-icons">
+					<i class="fa fa-pinterest font-white" aria-hidden="true"></i>
+				</div>
+				<div class="font-white social-media-text">Pinterest</div>
+			</li>
+		</a>
+		<a href="#">
+			<li class="flex">
+				<div class="social-media-icons">
+					<i class="fa fa-google-plus font-white" aria-hidden="true"></i>
+				</div>
+			<div class="font-white social-media-text">Google+</div>
+			</li>
+		</a>
+	</ul>	
+	</div>
+	<!-- Start Social Media Footer Icons -->
+</footer>
+<!-- End Footer -->
+</body>
+</html>
