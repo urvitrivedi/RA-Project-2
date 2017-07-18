@@ -14,27 +14,40 @@
 	
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <!-- End Google Fonts and Font Awesome -->
+
+<!-- Start bxSlider CSS file -->
+	<link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+<!-- End bxSlider CSS file -->
+
 </head>
 
-<body>
+<body onload="noItems()">
 <!-- Start Header -->
-	<header class="flex flex-just-between">
+	<header class="flex flex-row-wrap flex-header-grid flex-just-between">
 	<!-- Start Logo -->
-		<div class="logo padding-1em"><a href=""><img src="images/aloha-logo.svg" /></a></div>
+		<div class=" flex logo flex-order-1 padding-1em"><a href=""><img src="images/aloha-logo.svg" /></a></div>
 	<!-- End Logo -->
 	
 	<!-- Start Navigation -->
-		<nav class="flex">
-			<ul class="flex flex-row-wrap">
-				<li class="flex flex-center sliding-u-l-r"><a href="#">Home</a></li>
-				<li class="flex flex-center sliding-u-l-r"><a href="#">About</a></li>
-				<li class="flex flex-center sliding-u-l-r"><a href="#">Contact</a></li>
+	<div class="flex flex-order-3">
+		<nav class="flex flex-col flex-just-center">
+			<ul class="flex">
+				<li class="font-pink uppercase"><a href="#">About</a></li>
+				<li class="font-pink uppercase"><a href="#">Shop</a></li>
+				<li class="font-pink uppercase"><a href="#">Featured</a></li>
+				<li class="font-pink uppercase"><a href="#">Updates</a></li>
 			</ul>
 		</nav>
+	</div>	
 	<!-- End Navigation -->
 	
 	<!-- Start Cart Icon -->
-		<div class="cart-icon flex flex-center padding-1em"><a href="#"><img src="images/cart-icon.svg" /></a></div>
+		<div id="circle"><p id="totalItems">0</p></div>
+		<div class="flex flex-order-2 flex-center cart-icon padding-1em">
+			<a href="#">
+				<img src="images/cart-icon.svg" />
+			</a>
+		</div>
 	<!-- End Cart Icon -->
 	
 	</header>
@@ -58,54 +71,109 @@
 		</section>
 	<!-- End Call To Action Section -->
 	
+	
+	<!-- Start Image Grid -->
+	
+	<section class="image-grid">
+	
+	<!-- Start Image Grid Sub Section 1 -->
+		<div class="flex flex-col img-grid-subsection-1">
+			<div class="men-item">
+				<h4 class="flex flex-center banner-subtitle font-white uppercase">Men</h4>
+			</div>
+		
+			<!-- Start Sub-Sub Section 1a-->		
+			<div class=" flex flex-row img-grid-sub-subsection-1a">
+				<div class="trends-item">
+					<h4 class="flex flex-center banner-subtitle font-white uppercase">Trends</h4>
+				</div>
+
+				<div class="glasses-item">
+					<h4 class="flex flex-center banner-subtitle font-white uppercase">Glasses</h4>
+				</div>
+			</div><!-- End Sub-Sub Section 1a-->			
+		</div> 	
+	<!-- End Image Grid Sub Section 1 -->
+	
+	<!-- Start Image Grid Sub Section 2 -->					
+		<div class="flex flex-col img-grid-subsection-2">
+		
+		<!-- Start Sub-Sub Section 2a -->
+			<div class="flex flex-row img-grid-sub-subsection-2a">
+				<div class="sale-item">
+					<h4 class="flex flex-center banner-subtitle font-white uppercase">Sale</h4>
+				</div>
+
+				<div class="bags-item">
+					<h4 class="flex flex-center banner-subtitle font-white uppercase">Bags</h4>
+				</div>
+			</div><!-- End Sub-Sub Section 2a -->
+				
+			<div class="womens-item">
+				<h4 class="flex flex-center banner-subtitle font-white uppercase">Womens</h4>
+			</div>
+		</div>
+	<!-- End Image Grid Sub Section 2 -->	
+		
+	</section>
+	
+	<!-- End Image Grid -->
+	
 	<!-- Start Product Section -->
 		<section class="product padding-3em">
 			<h2 class="font-black text-align-center margin-btm padding-btm"><span class="subsection-italic">Most-Loved </span>Styles</h2>
-			<!-- Start Item 1 -->
-			<div class="individual-items flex flex-row-wrap flex-just-center">
+			
+				<div class="flex flex-row-wrap flex-just-center individualItems bxslider">
+				
+				<!-- Start Item 1 -->
 				<ul>
-					<li class="flex flex-col">
+					<li class="flex flex-col flex-center">
 						<img src="images/stretch-knit-dress.jpg" />
 						<h5 class="font-grey uppercase text-align-center">Dresses</h5>
 						<h3 class="font-pink padding-vertical-small text-align-center">Stretch Knit Dress</h3>
 						<h6 class="font-grey uppercase text-align-center">$169.00</h6>
+						<button class="atc" onClick="counter()">Add To Cart</button>
 					</li>
-				</ul>	
+				</ul>
 				<!-- End Item 1 -->
 		
 				<!-- Start Item 2 -->
 				<ul>
-					<li class="flex flex-col">
+					<li class="flex flex-col flex-center">
 						<img src="images/cotton-blue-shirt.jpg" />
 						<h5 class="font-grey uppercase text-align-center">Shirts</h5>
 						<h3 class="font-pink padding-vertical-small text-align-center">Cotton Blue Shirt</h3>
 						<h6 class="font-grey uppercase text-align-center">$89.00</h6>
+						<button class="atc" onClick="counter()">Add To Cart</button>
 					</li>
-				</ul>	
+				</ul>
 				<!-- End Item 2 -->
 
 				<!-- Start Item 3 -->
 				<ul>
-					<li class="flex flex-col">
+					<li class="flex flex-col flex-center">
 						<img src="images/checked-stretch-dress.jpg" />
 						<h5 class="font-grey uppercase text-align-center">Dresses</h5>
 						<h3 class="font-pink padding-vertical-small text-align-center">Checked Stretch Dress</h3>
 						<h6 class="font-grey uppercase text-align-center">$129.00</h6>
+						<button class="atc" onClick="counter()">Add To Cart</button>
 					</li>
 				</ul>	
 				<!-- End Item 3 -->
 
 				<!-- Start Item 4 -->
 				<ul>
-					<li class="flex flex-col">
+					<li class="flex flex-col flex-center">
 						<img src="images/blue-hipster-backpack.jpg" />
 						<h5 class="font-grey uppercase text-align-center">Bags</h5>
 						<h3 class="font-pink padding-vertical-small text-align-center">Blue Hipster Backpack</h3>
 						<h6 class="font-grey uppercase text-align-center">$69.00</h6>
+						<button class="atc" onClick="counter()">Add To Cart</button>
 					</li>
 				</ul>	
 				<!-- End Item 4 -->
-			</div>	
+					
+			</div>
 		</section>
 	<!-- End Product Section -->
 	
@@ -126,7 +194,7 @@
 	<!-- End Main Content -->
 
 <!-- Start Footer -->
-<footer class="flex flex-just-between font-white flex-footer-col-ai-center padding-3em">
+<footer class="flex font-white padding-3em">
 	<!-- Start Contact Address --> 
 	<div class="contact">
 		<ul>
@@ -138,7 +206,7 @@
 	<!-- End  Contact Address -->
 	
 	<!-- Start Social Media Footer Icons -->
-	<div class="social-media flex">
+	<div class="social-media flex flex-just-center">
 	<ul>
 		<a href="#">
 			<li class="flex">
@@ -185,5 +253,18 @@
 	<!-- Start Social Media Footer Icons -->
 </footer>
 <!-- End Footer -->
+
+<!-- Start Script -->
+	<script src="js/script.js" rel="javascript"></script>
+<!-- End Script -->
+
+<!-- Start JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="js/bx_Slider.js" rel="javascript"></script>
+
+<!-- Start bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js" rel="javascript"></script>
+<!-- End bxSlider Javascript file -->
+
 </body>
 </html>

@@ -10,7 +10,7 @@
 
 	* {
 		font-family: 'Raleway', sans-serif;
-		color:#000;
+		color:inherit;
 	}
 
 	h1, h2, h3,u, .contact li, .subsection-italic{

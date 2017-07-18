@@ -1,0 +1,693 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Index */
+/*	1.	General
+			a. Universal Selector
+			b. Heading Styles
+			c. Paragraph
+			d. Unordered List
+			e. Anchor Tag
+			f. Customized Padding for Specific Elements, Text:Uppercase, Text:Oblique
+	2.	Header
+			a. Logo
+			b. Navigation
+			c. Shopping Cart
+	3.	Banner	
+	4.	Hand Crafted Style Section
+	5.	Image Grid
+	6.	Product Carousel
+	7.	Signup Section
+			a. Form
+	8.	Footer
+			a. Contact Details
+			b. Social Media
+
+	9I. Media Query - Tablet version
+			a. Header
+				i.	Logo
+				ii.	Navigation
+				iii.Shopping Cart
+			b. Footer
+				i.	Contact Details
+				ii.	Social Media
+
+	9II. Media Query - Mobile version
+			a. Header
+				i.	Logo
+				ii.	Navigation
+				iii.Shopping Cart
+			b. Banner
+			c. Hand Crafted Styles
+			d. Image Grid
+			e. Signup Section
+				i.	Form
+			f. Footer
+				i.	Contact Details
+				ii.	Social Media
+*/
+
+/* 1. General */ 
+
+	body {
+		font-size: 14px;
+	}
+
+	h1{
+		font-weight: 100;
+		font-size: 4rem;
+	}
+
+	h2{
+		font-weight: 900;
+		font-size: 2em;
+	}
+
+	h3{
+		font-weight: 400;
+		font-size: 1.5em;
+	}
+
+	h4{
+		font-size: 1.25em;
+	}
+
+	h5{
+		font-size:0.75em;
+	}
+
+	h6{
+		font-size:1em;
+		font-weight: 400;
+	}
+
+	p{
+		font-size:1em;
+		line-height: 2em;
+	}
+
+	ul{
+		list-style: none;
+	}
+
+	li{
+		font-size:1em;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.padding-1em{
+		padding: 1em;
+	}
+
+	.padding-3em{
+		padding: 3em;
+	}
+
+	.padding-vertical-7em{
+		padding-top:7em;
+		padding-bottom: 7em;
+	}
+
+	.padding-horizontal-30em{
+		padding-left:30em;
+		padding-right:30em;
+	}
+	
+	.padding-top{
+		padding-top:2em;
+	}
+
+	.padding-vertical-small{
+		padding:0.5em 0;
+	}
+
+	.margin-btm{
+		margin-bottom: 1em;
+	}
+
+	.padding-btm{
+		padding-bottom: 1em
+	}
+
+	.padding-horizontal-2em-mobile{
+		padding-left:2em;
+		padding-right:2em;
+	}
+
+	.uppercase{
+		text-transform: uppercase;
+	}
+
+	.text-align-center{
+		text-align: center;
+	}
+
+	.subsection-italic{
+		font-weight: 400;
+		font-style: oblique;
+	}
+
+	.flex-footer-col-ai-center{
+		flex-direction: column;
+		align-items: center;
+	}
+
+/* 2. Header */
+
+	header{
+		max-width:100%;
+	}
+
+	.logo{
+		flex-basis: 40%;
+		padding: 1em;
+	}
+
+/* 2b. Start Navigation */
+
+	nav{
+		border-top: 1.5px solid #d7d7d7;
+	}
+
+	nav > ul > li {
+		font-size: 1em;
+	  	padding: 2em 1.75em 2em 1.5em;
+	}
+
+	nav > ul > li > a{
+		border-bottom: 1px solid transparent;
+		transition: 0.5s ease;
+	}
+
+	nav > ul > li > a:hover,
+	nav > ul > li > a:active{
+		border-bottom:1px solid #e2574c;
+	}
+
+/* 2c. Shopping Cart */
+
+	.cart-icon img{
+		width:50px;
+		height:50px;
+	}
+
+	#circle{
+		width:25px;
+		height:25px;
+		position:absolute;
+		top:3%;
+		right:1%;
+		background: red;
+		z-index: 9999;
+		color: #000;
+		border-radius: 20px;
+	}
+
+	#totalItems{
+		color:#fff;
+		/*margin: 0 8px;*/
+		margin:-3px 0 0 9px;
+	}
+
+/* 3. Start Banner */
+	.banner{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/banner-girl.png) top 5em center no-repeat, url(../images/flower-bkgd.jpg) center center no-repeat;
+		background-size: cover,contain;
+		height: 80vh;
+	}
+
+	.banner-subtitle{
+		font-weight: 600;
+	}
+	
+	.banner h1{
+		font-size:3rem ;
+	}
+
+/*  4. Start Hand Crafted Styles Section */
+	
+	.hand-crafted-styles{
+		border-bottom: 2px solid #d7d7d7;
+	}
+
+/* 5. Image Grid Section */
+
+	.img-grid-sub-subsection-1a{
+		border-bottom: 5px solid #fff;
+	}
+
+	.img-grid-sub-subsection-2a{
+		border-bottom: 5px solid #fff;
+	}
+	
+/* Image Grid Individual Section */
+	
+	.men-item{
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/mens-category.jpg) center no-repeat;
+		background-size:cover;
+		flex-basis:50%;
+		padding:10em 0;
+		border-bottom: 5px solid #fff;
+	}
+	
+	.trends-item{
+		background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/trends-category.jpg) center no-repeat;
+		background-size:cover;
+		flex: 0 0 50%;
+		padding:10em 0;
+		border-right: 5px solid #fff;
+	}
+	
+	.glasses-item{
+		background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/glasses-category.jpg) center no-repeat;
+		background-size:cover;
+		flex: 0 0 50%;
+		padding:10em 0;
+	}
+	
+	.sale-item{
+		background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/sale-category.jpg) center no-repeat;
+		background-size:cover;
+		flex: 0 0 50%;
+		padding:10em 0;
+		border-right: 5px solid #fff;
+	}
+	
+	.bags-item{
+		background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/bags-category.jpg) center no-repeat;
+		background-size:cover;
+		flex: 0 0 50%;
+		padding:10em 0;
+	}
+	
+	.womens-item{
+		background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/womens-category.jpg) center no-repeat;
+		background-size:cover;
+		flex-basis:50%;
+		padding:10em 0;
+	}
+
+/* 6. Start Product Section */
+
+.product .bx-wrapper{
+	box-shadow:none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow:none !important;
+}
+
+	button.atc{
+		width:150px;
+		max-width:100%;
+		padding:1em 2em;
+		margin:2em 0;
+		background:#000;
+		border:none;
+		border-radius:20px;
+		color:#fff;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		transition: all 1s;
+		cursor: pointer;
+	}
+
+	button.atc:hover{
+		background:#969696;
+	}
+
+	button.atc:focus{
+		outline: none;	
+	}
+	
+
+/* 7. Start Sign-up Section */
+
+	.signup-section{
+		background: url(../images/wave-bkgd.jpg) bottom no-repeat;
+		filter:opacity(.9);
+		padding:5rem 0;
+	}
+
+	.signup-section > h2{
+		margin-top:-2em;
+	}
+		
+/* 7a. Form */
+
+	.subscribe{
+		margin-top: 1em;
+		width:325px;
+		max-width:100%;
+		background: #fff;
+		border-radius:35px;
+		padding:0.5em 0.75em;
+	}
+
+	.subscribe-input-email > input[type=text] {
+		background: rgba(255,255,255,0);
+		border:none;
+		font-size:1em;
+		padding:0 5em 0 1em;
+		width:100%;
+	}
+
+	.subscribe-input-email > input[type=text]:focus {
+		outline-color: transparent;
+		outline-style: none;
+	}
+
+	.button > input[type=submit]{
+		background-color: #e2574c;
+		border-style: none;
+		border-radius: 25px;
+		font-size:1em;
+		color:#fff;
+		padding:1em 2em;
+		transition: all 0.5s;
+	}
+
+		.button > input[type=submit]:focus{
+			outline-color: transparent;
+			outline-style: none;
+		}
+
+	.button > input[type=submit]:hover{
+		background-color: #969696;
+	}
+
+/* 8. Footer */
+
+	footer{
+		background: #242424;
+		border-top:#fff 0.5em solid;
+		display: flex;
+		flex-direction: column;
+	}
+
+/* 8a. Footer Contact Details */
+	.contact{
+		font-weight: 100;
+		font-size: 1em;
+		line-height: 1.25em;
+	}
+
+	.contact ul > li{
+		text-align: center;
+		margin:1em 0;
+		color: #fff;
+	} 
+
+	.contact ul > li:last-child{
+		color: #969696;
+	}
+
+/* 8a. Footer Social Media Details */
+
+	.social-media ul{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.social-media ul li{
+		padding:0 1em 0 1em;
+	}
+
+	.social-media-text{
+		display: none;
+	}
+
+
+/*-------------------------------------------------------------
+						Media Queries
+-------------------------------------------------------------*/
+
+/*-------------------------------------------------------------
+					9.I.	Tablet
+-------------------------------------------------------------*/
+@media (min-width:640px) and (max-width:999px){
+
+	.padding-horizontal-12em-tablet{
+		padding-left:12em;
+		padding-right:12em;
+	}
+	
+/* 9I a.Header */	
+	
+	.logo{
+		flex-basis: 15%;
+	}
+	
+	nav{
+		border:none;
+		order:2;
+	}
+
+	.cart-icon{
+		order:3;
+	}
+	
+/* 9I b. Footer */
+	
+	footer{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items: flex-start;
+	}
+
+/* 9I a.i. Footer Contact Details */
+
+	.contact ul > li{
+		text-align: left;
+	}
+
+/* 9I a.ii. Footer Social Media */
+	.social-media{
+		font-size:1em;
+		padding-top:1.25em;
+	}
+	
+	.social-media ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.social-media-icons{
+		width:30%;
+		padding-bottom:0.75em;
+	}
+
+	footer .fa:hover {
+		color:#969696;
+	}
+
+	.social-media-text{
+		display: flex;
+		width:5rem;
+		padding-bottom:0.75em;
+	}
+
+	.social-media-text:hover{
+			color:#969696;
+	}
+	
+} /* End Tablet Media Media Query */
+
+
+
+/*-------------------------------------------------------------
+						9.I.	Desktop
+-------------------------------------------------------------*/
+
+@media only screen and (min-width:1000px){
+	
+	
+/* 9II.a. Header */
+	
+/* i. Logo */
+	
+	.flex-header-logo{
+		order:1
+	}
+
+	.logo{
+		flex-basis: 15%;
+	}
+
+/* ii. Navigation */
+		
+	nav{
+		border:none;
+		order:2;
+	}
+	
+	nav > ul > li{
+		padding:2em 1em;
+	}
+
+	nav > ul > li > a{
+		border-bottom: 1px solid transparent;
+		transition: 0.5s ease;
+	}
+
+	nav > ul > li > a:hover,
+	nav > ul > li > a:active{
+		border-bottom:1px solid #e2574c;
+	}
+	
+/* iii. Shopping Cart */
+	
+	.cart-icon{
+		order:3;
+	}
+
+	.cart-icon img{
+		width:50px;
+		height:50px;
+	}
+
+/* b. Banner */
+	.banner{
+		height: 90vh;
+	}
+	
+	.banner h1{
+		font-size:5rem ;
+	}
+
+
+/*  c. Hand Crafted Styles Section */
+	
+	.hand-crafted-styles{
+		border-bottom: none;
+	}
+	
+/* d. Image Grid */
+
+	.img-grid-subsection-1{
+		display: flex;
+		flex-flow: row;
+	}
+	
+	.img-grid-sub-subsection-1a {
+		width: 50%;
+		margin-top:0;
+	}
+	
+	.men-item{
+		border-right:5px solid #fff;
+	}
+	
+	.img-grid-subsection-2{
+		display: flex;
+		flex-flow: row;
+		margin:0;
+	}
+	
+	.img-grid-sub-subsection-2a{
+		width: 50%;
+		margin-bottom:0;
+	}
+	
+	.womens-item{
+		border-left:5px solid #fff;
+		height:2.35vh;
+	}
+		
+	
+/* e. Sign-up Section */
+
+	.signup-section{
+		background: url(../images/wave-bkgd.jpg) bottom no-repeat;
+		filter:opacity(.9);
+		padding:5rem 0;
+	}
+
+	.signup-section > h2{
+		margin-top:-2em;
+	}
+		
+/* i. Form */
+
+	.subscribe{
+		margin-top: 2em;
+		width:600px;
+		max-width:100%;
+		padding:0.5em 0.75em;
+	}
+
+	.subscribe-input-email > input[type=text] {
+		background: rgba(255,255,255,0);
+		border:none;
+		font-size:1em;
+		padding:0 1em 0 1.5em;
+		width:30em;
+	}
+
+	.button > input[type=submit]{
+		background-color: #e2574c;
+		border-style: none;
+		border-radius: 25px;
+		font-size:1em;
+		color:#fff;
+		padding:1em 3em;
+		transition: all 0.5s;
+	}
+
+	.button > input[type=submit]:hover{
+		background-color: #969696;
+	}
+	
+/* f. Footer */
+	
+	footer{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		align-items: flex-start;
+	}
+
+/* i. Footer Contact Details */
+
+	.contact ul > li{
+		text-align: left;
+	}
+
+/* ii. Footer Social Media */
+	.social-media{
+		font-size:1em;
+		padding-top:1.25em;
+	}
+	
+	.social-media ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.social-media-icons{
+		width:30%;
+		padding-bottom:0.75em;
+	}
+
+	footer .fa:hover {
+		color:#969696;
+	}
+
+	.social-media-text{
+		display: flex;
+		width:5rem;
+		padding-bottom:0.75em;
+	}
+
+	.social-media-text:hover{
+			color:#969696;
+	}	
+	
+} /* End Media Query Desktop */
+
+
+
+
+
